@@ -6,3 +6,4 @@ RUN go get github.com/gin-gonic/gin
 RUN go get github.com/go-martini/martini
 RUN go build -o main . 
 CMD ["/app/main"]
+EXPOSE 8080
