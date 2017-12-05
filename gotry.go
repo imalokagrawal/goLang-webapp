@@ -23,7 +23,7 @@ func main() {
     f, err := os.OpenFile(logFile, os.O_RDWR | os.O_CREATE | os.O_APPEND, 0666)
            
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        // fmt.Fprintf(w, "Hello form Go! Error: %v", err)
+        // fmt.Fprintf(w, "Updated Hello form Go! Error: %v", err)
         fmt.Fprintf(w, `
         <html>
             <body>
